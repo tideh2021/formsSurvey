@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+--myBlueP : rgb(76, 68, 148, 0.4);
+--myBluePOpacity:  rgb(76, 68, 148, 0.6);
+--myWhite: #ffffff;
+--myNavyblue: #0a0a3a;
+--myGreen: #37af65;
+
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+#main {
+  position: absolute;
+  width: 100%;
+  height: auto;
+ color: var(--myWhite);
+ justify-content: center;
+ align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  padding-top: 0;
+  margin-top:0;
+}
+
+#content-div {
+  width: 100%;
+   height: 100%;
+  margin-top: -2em; 
+  padding-top: 3em;
+  background-color: var(--myBluePOpacity);
+  background-size: cover;
+}
+
+#title {
+  font-size: 37px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#description {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.2em;
+  font-style: italic;
+} 
+
+#survey-form {
+display: block;
+position: relative;
+  width: 55%;
+  min-width: 480px;
+  height: auto;
+  background-color: var(--myNavyblue);
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 38px; 
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px; 
+  z-index: 999;
+}
+#sect1 label,
+#survey-form p {
+ display: inline-block;
+  font-size: 20px;
+  margin-left: 2.2rem;
+  margin-top: .7rem; 
+}
+
+#sect1 input, #dropdown,
+#dropdown2 {
+  display: block;
+  width: 90%;
+  min-width: 400px;
+  height: 40px;
+  margin: 14px auto; 
+  border-radius: 6px;
+  border: none;
+  font-size: 1.1rem;
+}
+
+#recom {
+  margin-top: -1.5em;
+}
+
+#improve-div label
+{
+  font-size: 1.15em;
+  margin-top: .7rem;  
+}
+#comment-div label {
+  font-size: 1.15em;
+  margin-left: 1.5em;
+  line-height: 2em;
+}
+#comment-div {
+  margin-top: -1.5em;
+}
+
+[type="radio"],
+[ type="checkbox"]  {
+  margin-left: 3em;
+  margin-right: 1.5em;
+  margin-top: 1.5em;
+  transform: scale(2);
+}
+#comments {
+  display: block;
+width: 90%;
+justify-content: center;
+margin: 2px auto;
+font-size: 1.2em;
+}
+#submit {
+  display: block;
+  width: 90%;
+  height: 4em;
+  font-size: .8em;
+  color: var(--myWhite);
+  margin: 2.5em auto 2rem auto;
+  background-color: var(--myGreen);
+  border-radius: 2px;
+  border: none;
+}
+
+
+@media  screen and (max-width: 700px)
+  {
+    #sect1 label {
+      margin-left:  1.5rem; 
+    }
+
+   }
