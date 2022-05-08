@@ -8,8 +8,7 @@
 --myNavyblue: #0a0a3a;
 --myGreen: #37af65;
 
-}
-
+}   
 
 body {
   padding: 0;
@@ -22,9 +21,9 @@ p {
 }
 
 #main {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
  color: var(--myWhite);
  justify-content: center;
  align-items: center;
@@ -32,23 +31,28 @@ p {
   background-repeat: no-repeat; 
   background-size: cover;
   background-position: center;
-  padding-top: 0;
   margin-top:0;
 }
 
-#content-div {
+ #content-div {
   width: 100%;
-   height: 100%;
-  margin-top: -2em; 
-  padding-top: 3em;
-  background-color: var(--myBluePOpacity);
+   height: auto;
+   margin-top: -2em;  
+   background-color: var(--myBluePOpacity);
   background-size: cover;
-}
+  background-repeat: no-repeat;
+  background-position: center;
+   padding-bottom:  2.5em; 
+ 
+} 
 
 #title {
-  font-size: 37px;
+  font-size: 2.32em;
   font-weight: 400;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
 }
 
 #description {
@@ -61,33 +65,33 @@ p {
 #survey-form {
 display: block;
 position: relative;
-  width: 55%;
-  min-width: 480px;
-  height: auto;
+  width: 50%;
+ height: 80%;
   background-color: var(--myNavyblue);
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 38px; 
-  padding-bottom: 20px;
-  padding-right: 20px;
-  padding-left: 20px; 
+  margin-left: auto; 
+   margin-right: auto;
+  margin-bottom: 2em;
+   padding-left: 1.5em; 
+   padding-right: 1.5em; 
+   padding-bottom: 2em;
   z-index: 999;
+  border-radius: .6em; 
+ background-size: cover;
+  background-repeat: no-repeat;
 }
 #sect1 label,
 #survey-form p {
  display: inline-block;
   font-size: 20px;
-  margin-left: 2.2rem;
-  margin-top: .7rem; 
+  margin-left: 0;
 }
 
 #sect1 input, #dropdown,
 #dropdown2 {
   display: block;
-  width: 90%;
-  min-width: 400px;
+  width: 100%;
   height: 40px;
   margin: 14px auto; 
   border-radius: 6px;
@@ -106,7 +110,6 @@ position: relative;
 }
 #comment-div label {
   font-size: 1.15em;
-  margin-left: 1.5em;
   line-height: 2em;
 }
 #comment-div {
@@ -115,35 +118,57 @@ position: relative;
 
 [type="radio"],
 [ type="checkbox"]  {
-  margin-left: 3em;
-  margin-right: 1.5em;
   margin-top: 1.5em;
   transform: scale(2);
 }
 #comments {
-  display: block;
-width: 90%;
+display: block;
+width: 100%;
 justify-content: center;
 margin: 2px auto;
 font-size: 1.2em;
+border-radius: .3em;
 }
 #submit {
   display: block;
-  width: 90%;
-  height: 4em;
-  font-size: .8em;
+  width: 100%;
+  height: 2em;
+  font-size: 2em;
+  font-weight: bold;
   color: var(--myWhite);
-  margin: 2.5em auto 2rem auto;
+  margin: 2em auto 2rem auto;
   background-color: var(--myGreen);
-  border-radius: 2px;
+  border-radius: 6px;
   border: none;
 }
-
+#submit:hover {
+  cursor: pointer;
+}
 
 @media  screen and (max-width: 700px)
   {
-    #sect1 label {
-      margin-left:  1.5rem; 
+    #content-div {
+      width: 100%;
+    padding-left: auto;
+    padding-right: auto;
     }
-
+    #sect1 label {
+      margin-left: 1.5rem; 
+    }
+    #survey-form {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+#improve-div label.openSource {
+ font-size: .98em; 
+  text-align: center;
+}
+#comment-div label {
+  text-align: center;
+}
+#title {
+  font-size: 2em;
+}
    }
+  
